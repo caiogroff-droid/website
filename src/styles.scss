@@ -51,94 +51,94 @@ body {
 }
 
 .m-sm {
-  margin: 0.5rem;
-}
-.m-md {
   margin: 1rem;
 }
-.m-lg {
+.m-md {
   margin: 2rem;
 }
+.m-lg {
+  margin: 3rem;
+}
 .mt-sm {
-  margin-top: 0.5rem;
+  margin-top: 0.5vh;
 }
 .mt-md {
-  margin-top: 1rem;
+  margin-top: 1vh;
 }
 .mt-lg {
-  margin-top: 2rem;
+  margin-top: 2vh;
 }
 .ml-sm {
-  margin-left: 0.5rem;
+  margin-left: 0.5vw;
 }
 .ml-md {
-  margin-left: 1rem;
+  margin-left: 1vw;
 }
 .ml-lg {
-  margin-left: 2rem;
+  margin-left: 2vw;
 }
 .mb-sm {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5vh;
 }
 .mb-md {
-  margin-bottom: 1rem;
+  margin-bottom: 1vh;
 }
 .mb-lg {
-  margin-bottom: 2rem;
+  margin-bottom: 2vh;
 }
 .mr-sm {
-  margin-right: 0.5rem;
+  margin-right: 0.5vw;
 }
 .mr-md {
-  margin-right: 1rem;
+  margin-right: 1vw;
 }
 .mr-lg {
-  margin-right: 2rem;
+  margin-right: 2vw;
 }
 .p-sm {
-  padding: 0.5rem;
-}
-.p-md {
   padding: 1rem;
 }
-.p-lg {
+.p-md {
   padding: 2rem;
 }
+.p-lg {
+  padding: 3rem;
+}
 .pt-sm {
-  padding-top: 0.5rem;
+  padding-top: 0.5vh;
 }
 .pt-md {
-  padding-top: 1rem;
+  padding-top: 1vh;
 }
 .pt-lg {
-  padding-top: 2rem;
+  padding-top: 2vh;
 }
 .pl-sm {
-  padding-left: 0.5rem;
+  padding-left: 0.5vw;
 }
 .pl-md {
-  padding-left: 1rem;
+  padding-left: 1vw;
 }
 .pl-lg {
-  padding-left: 2rem;
+  padding-left: 2vw;
 }
 .pb-sm {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.5vh;
 }
 .pb-md {
-  padding-bottom: 1rem;
+  padding-bottom: 1vh;
 }
 .pb-lg {
-  padding-bottom: 2rem;
+  padding-bottom: 2vh;
 }
 .pr-sm {
-  padding-right: 0.5rem;
+  padding-right: 0.5vw;
 }
 .pr-md {
-  padding-right: 1rem;
+  padding-right: 1vw;
 }
 .pr-lg {
-  padding-right: 2rem;
+  padding-right: 2vw;
 }
 
 .flex-row {
@@ -156,4 +156,36 @@ body {
   --terciary-color: #ffd046;
   --quaternary-color: #ed6a5e;
   --quintary-color: #23ce6b;
+}
+
+* {
+  font-family: 'Sora', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 700;
+}
+
+// Para código, terminal, nomes de tecnologias
+code,
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+// Hero title estilo tech
+.hero-title {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+}
+
+// Subtítulos e labels
+.label,
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
 }

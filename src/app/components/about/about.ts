@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { MatDivider } from '@angular/material/divider';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [MatDivider],
   templateUrl: './about.html',
   styleUrl: './about.scss',
 })
