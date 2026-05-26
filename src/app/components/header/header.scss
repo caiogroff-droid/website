@@ -1,0 +1,39 @@
+// header.component.scss
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  transition: all 0.3s ease;
+  z-index: 100;
+
+  &.scrolled {
+    background: var(--mat-sys-surface);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.pos-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-toolbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.spacer {
+  flex: 1 1 auto; // empurra os links para a direita
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

@@ -1,1 +1,159 @@
-/* You can add global styles to this file, and also import other style files */
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  height: 100%;
+  @include mat.theme(
+    (
+      color: (
+        primary: mat.$magenta-palette,
+        tertiary: mat.$violet-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    )
+  );
+}
+
+body {
+  // Default the application to a light color theme. This can be changed to
+  // `dark` to enable the dark color theme, or to `light dark` to defer to the
+  // user's system settings.
+  color-scheme: light;
+
+  // Set a default background, font and text colors for the application using
+  // Angular Material's system-level CSS variables. Learn more about these
+  // variables at https://material.angular.dev/guide/system-variables
+  background-color: var(--mat-sys-surface);
+  color: var(--mat-sys-on-surface);
+  font: var(--mat-sys-body-medium);
+
+  // Reset the user agent margin.
+  margin: 0;
+  height: 100%;
+}
+
+[appScrollReveal] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.m-sm {
+  margin: 0.5rem;
+}
+.m-md {
+  margin: 1rem;
+}
+.m-lg {
+  margin: 2rem;
+}
+.mt-sm {
+  margin-top: 0.5rem;
+}
+.mt-md {
+  margin-top: 1rem;
+}
+.mt-lg {
+  margin-top: 2rem;
+}
+.ml-sm {
+  margin-left: 0.5rem;
+}
+.ml-md {
+  margin-left: 1rem;
+}
+.ml-lg {
+  margin-left: 2rem;
+}
+.mb-sm {
+  margin-bottom: 0.5rem;
+}
+.mb-md {
+  margin-bottom: 1rem;
+}
+.mb-lg {
+  margin-bottom: 2rem;
+}
+.mr-sm {
+  margin-right: 0.5rem;
+}
+.mr-md {
+  margin-right: 1rem;
+}
+.mr-lg {
+  margin-right: 2rem;
+}
+.p-sm {
+  padding: 0.5rem;
+}
+.p-md {
+  padding: 1rem;
+}
+.p-lg {
+  padding: 2rem;
+}
+.pt-sm {
+  padding-top: 0.5rem;
+}
+.pt-md {
+  padding-top: 1rem;
+}
+.pt-lg {
+  padding-top: 2rem;
+}
+.pl-sm {
+  padding-left: 0.5rem;
+}
+.pl-md {
+  padding-left: 1rem;
+}
+.pl-lg {
+  padding-left: 2rem;
+}
+.pb-sm {
+  padding-bottom: 0.5rem;
+}
+.pb-md {
+  padding-bottom: 1rem;
+}
+.pb-lg {
+  padding-bottom: 2rem;
+}
+.pr-sm {
+  padding-right: 0.5rem;
+}
+.pr-md {
+  padding-right: 1rem;
+}
+.pr-lg {
+  padding-right: 2rem;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --primary-color: #fff7f9;
+  --secondary-color: #241e4e;
+  --terciary-color: #ffd046;
+  --quaternary-color: #ed6a5e;
+  --quintary-color: #23ce6b;
+}
