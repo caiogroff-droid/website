@@ -2,3 +2,75 @@ p {
   font-size: 1.2rem;
   line-height: 1.8;
 }
+mat-chip {
+  font-family: 'JetBrains Mono', monospace !important;
+  border-radius: 20px !important;
+  padding: 0.7rem 1rem !important;
+  cursor: default;
+
+  &.chip-default {
+    background-color: #f3d2d2 !important;
+
+    color: #333 !important;
+  }
+  &.chip-yellow {
+    background-color: #f7ec5d !important;
+    color: #333 !important;
+  }
+  &.chip-pink {
+    background-color: #faa9df !important;
+    color: white !important;
+  }
+  &.chip-purple {
+    background-color: #5269eb !important;
+    color: white !important;
+  }
+  &.chip-red {
+    background-color: #f33936 !important;
+    color: white !important;
+  }
+  &.chip-green {
+    background-color: #74e279 !important;
+    color: white !important;
+  }
+  &.chip-blue {
+    background-color: #1e88e5 !important;
+    color: white !important;
+  }
+}
+
+.chips-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+::ng-deep
+  .mat-mdc-standard-chip:not(.mdc-evolution-chip--disabled)
+  .mdc-evolution-chip__action--primary::before {
+  border-radius: 0 !important;
+  border-color: transparent !important;
+}
+
+::ng-deep .mat-mdc-standard-chip .mdc-evolution-chip__text-label {
+  font-size: 1rem !important;
+  font-family: inherit !important;
+  font-weight: 550 !important;
+}
+
+::ng-deep .mdc-evolution-chip__text-label {
+  color: #333 !important;
+}
+
+::ng-deep {
+  .chip-purple .mdc-evolution-chip__text-label {
+    color: white !important;
+  }
+  .chip-red .mdc-evolution-chip__text-label {
+    color: white !important;
+  }
+  .chip-blue .mdc-evolution-chip__text-label {
+    color: white !important;
+  }
+}
