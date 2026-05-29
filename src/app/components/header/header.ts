@@ -12,9 +12,14 @@ import { ScrollService } from '../../services/scroll';
 export class Header {
   constructor(public scroll: ScrollService) {}
   scrolled = false;
+  menuOpen = false;
 
   @HostListener('window:scroll')
   onScroll() {
     this.scrolled = window.scrollY > 50;
+  }
+
+  getScreenWidth() {
+    return window.innerWidth;
   }
 }
