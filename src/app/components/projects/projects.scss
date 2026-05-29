@@ -2,3 +2,74 @@ p {
   font-size: 1.2rem;
   line-height: 1.8;
 }
+
+.card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+mat-card {
+  flex: 1 1 calc(50% - 1.5rem);
+  min-width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-radius: 16px !important;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4) !important;
+  }
+
+  @media (max-width: 900px) {
+    flex: 1 1 100%;
+    margin: 0 1rem;
+  }
+}
+
+.mat-mdc-card {
+  background-color: #0f0e17;
+  color: #eaeaea;
+}
+
+mat-card-title {
+  font-size: 1.3rem !important;
+  font-weight: 700 !important;
+  color: #fff5f5;
+}
+
+mat-card-subtitle {
+  color: #9585f9 !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.03em;
+}
+
+mat-card-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #b0adc8;
+  margin-top: 0.75rem;
+}
+
+mat-card-image {
+  border-radius: 8px;
+  margin: 0.75rem 1rem !important;
+  opacity: 0.92;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+[mat-button] {
+  color: #9585f9 !important;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}

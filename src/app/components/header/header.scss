@@ -26,7 +26,7 @@ mat-toolbar {
   z-index: 100;
   transition: all 0.3s ease;
   transform: translateY(0);
-  position: absolute !important;
+  position: fixed !important;
 }
 
 .spacer {

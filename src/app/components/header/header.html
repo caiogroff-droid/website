@@ -13,7 +13,17 @@
     <button mat-button (click)="scroll.scrollTo('projects')">Projetos</button>
     <button mat-button (click)="scroll.scrollTo('skills')">Skills</button>
     <button class="mr-lg" mat-button (click)="scroll.scrollTo('contact')">Contato</button>
-  } @else {}
+  } @else {
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="scroll.scrollTo('about')">Sobre</button>
+      <button mat-menu-item (click)="scroll.scrollTo('projects')">Projetos</button>
+      <button mat-menu-item (click)="scroll.scrollTo('skills')">Skills</button>
+      <button mat-menu-item (click)="scroll.scrollTo('contact')">Contato</button>
+    </mat-menu>
+  }
 </mat-toolbar>
 <div style="height: 56px"></div>
 <div style="height: 56px"></div>

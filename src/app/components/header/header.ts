@@ -2,10 +2,11 @@ import { Component, HostListener } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ScrollService } from '../../services/scroll';
+import { MatMenu, MatMenuModule } from '@angular/material/menu';
 
 @Component({
   selector: 'app-header',
-  imports: [MatButtonModule, MatToolbarModule],
+  imports: [MatButtonModule, MatToolbarModule, MatMenu, MatMenuModule],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
